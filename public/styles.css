@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffe4ec;
+  color: #444;
+  cursor: none;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffd6e7;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+/* Headings */
+h2 {
+  color: #ff4f87;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 💖 Heart Cursor */
+.cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background: pink;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: background 0.2s ease;
+}
+
+.cursor::before,
+.cursor::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.cursor::before {
+  top: -12px;
+  left: 0;
+}
+
+.cursor::after {
+  left: 12px;
+  top: 0;
+}body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ffe4ec,
+    #ffd6e7,
+    #ffc0cb,
+    #ffb6c1
+  );
+  color: #444;
+  cursor: none;
+}section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease;
+}header {
+  background: rgba(255, 192, 203, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #fff;
+}body {
+  background: rgb(224, 24, 101);
+}.cute-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ff4f87;
+}/* Hearts container */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Individual hearts */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: floatUp 6s linear infinite;
+  opacity: 0.6;
+}
+
+/* Heart shape */
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+/* Animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+} 
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e7, #ffc0cb);
+  color: #444;
+  cursor: none;
+}
+
+/* Cute title */
+.cute-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff4f87;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* 💖 Hearts background */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: floatUp 6s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Cursor */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+} /* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+  border: 5px solid #ffb6c1;
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5);
+  transition: transform 0.3s ease;
+}
+
+/* Cute hover effect */
+.profile-pic:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  background: #ffe4ec;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4f87;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2e6f;
+}
+
+/* Success message */
+#successMsg {
+  color: #ff4f87;
+  margin-top: 10px;
+  font-weight: bold;
+}
